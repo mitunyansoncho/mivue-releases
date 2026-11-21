@@ -1,6 +1,6 @@
 # MIvue
 
-EViews 互換の計量経済ソフトウェア **MIvue** の公式配布ページです。このリポジトリは配布専用で、ソースコードは含まれていません。
+EViews 互換の計量経済ソフトウェア **MIvue** の配布ページです。このリポジトリは配布専用で、ソースコードは含まれていません。
 
 English version: [README.en.md](README.en.md)
 

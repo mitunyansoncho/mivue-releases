@@ -1,6 +1,6 @@
 # MIvue
 
-Official distribution page for **MIvue**, an econometric software package compatible with EViews. This repository is for distribution only and does not contain source code.
+Distribution page for **MIvue**, an econometric software package compatible with EViews. This repository is for distribution only and does not contain source code.
 
 Japanese version: [README.md](README.md)
 

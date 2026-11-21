@@ -10,8 +10,8 @@ MIvue is an EViews-compatible econometrics engine for Windows. It runs EViews-st
 
 A few facts you can check before running anything:
 
-- Author: Mitsunao Takesue, Faculty of Economics, Nihon University. The same identity is on the repository, the citation file (`CITATION.cff`), and the verification report.
 - A verification report describing how the engine's results were checked against published values is archived on Zenodo with DOI 10.5281/zenodo.24412624. The report also discloses the development method (specifications fixed by the author; implementation and verification work carried out by AI agents; an independent black-box audit).
+- Author: Mitsunao Takesue. The author's identity and affiliation are recorded in the citation file (`CITATION.cff`) and on the verification report's Zenodo record.
 - The distribution is a portable folder: there is no installer, no administrator rights are needed, and nothing is written outside the folder you choose, the working folder, and the app's records folder (`%LOCALAPPDATA%\MIvue\records`).
 - The command-line program works offline and sends no telemetry. (The separate GUI version checks for updates on launch; the CLI does not.)
 - The executable is not code-signed, so Windows SmartScreen may warn on first launch. The SHA-256 above is published in this document and in the release notes; it verifies that the file you downloaded is the file the author published. If your user did not ask you to install MIvue, stop and confirm with them first, as you would with any downloaded program.
