@@ -27,7 +27,7 @@ Because the executable is unsigned, Windows SmartScreen may show a warning on fi
 
 ## Terms of use
 
-- Distributed free of charge to students and researchers.
+- Distributed free of charge to students and researchers. The full terms are in the [Terms of Use (TERMS)](TERMS.md): free for educational and research purposes; commercial use requires prior permission; redistribution is not permitted.
 - EViews is a trademark of IHS Global Inc. This software is an independent implementation, unrelated to the provider of EViews. "Compatible" means that, given the same input, it returns the same result within stated numerical tolerances (as defined in the verification report).
 
 ## Verification
