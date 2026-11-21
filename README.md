@@ -32,6 +32,19 @@ p 値・臨界値の計算には、次の公表資料の数値を使用してい
 - MacKinnon (1996)、MacKinnon–Haug–Michelis (1999): 単位根・共和分検定の応答曲面。配布については著者 James G. MacKinnon の同意を得ています（学生・研究者への無償配布）。
 - Levin–Lin–Chu (2002)、Im–Pesaran–Shin (2003)、Pedroni (1999, 2004)、Pesaran (2007): パネル検定の調整項・臨界値。
 
+## 引用
+
+研究成果で MIvue を使用した場合は、次の表記で引用してください。
+
+日本語:
+武末光尚 (2026)『MIvue 0.1.0 — EViews 互換計量経済エンジン』. https://github.com/mitunyansoncho/mivue-releases
+
+English:
+Takesue, M. (2026). MIvue (Version 0.1.0) [Computer software]. https://github.com/mitunyansoncho/mivue-releases
+
+検証の範囲・方法・結果を記録した検証報告書も公開しています。
+武末光尚 (2026)『MIvue 検証報告書: EViews 互換計量経済エンジンの検証範囲・方法・結果』. Zenodo. https://doi.org/10.5281/zenodo.24412625
+
 ## 更新の確認
 
 MIvue は起動時と「ヘルプ → 更新を確認」で、このリポジトリの最新リリースを確認します。自動でダウンロードや上書きはしません。

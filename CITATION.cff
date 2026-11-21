@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "MIvue"
+abstract: "An independently developed econometric software package that reimplements the command language and estimation behaviour of EViews, distributed free of charge to students and researchers."
+authors:
+  - family-names: "Takesue"
+    given-names: "Mitsunao"
+    affiliation: "Nihon University, Faculty of Economics"
+version: "0.1.0"
+date-released: 2026-11-21
+url: "https://github.com/mitunyansoncho/mivue-releases"
+references:
+  - type: report
+    authors:
+      - family-names: "Takesue"
+        given-names: "Mitsunao"
+    title: "MIvue 検証報告書: EViews 互換計量経済エンジンの検証範囲・方法・結果"
+    year: 2026
+    doi: "10.5281/zenodo.24412625"
+    url: "https://doi.org/10.5281/zenodo.24412625"
