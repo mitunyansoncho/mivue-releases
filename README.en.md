@@ -28,7 +28,17 @@ Because the executable is unsigned, Windows SmartScreen may show a warning on fi
 ## Terms of use
 
 - Distributed free of charge to students and researchers.
-- EViews is a trademark of IHS Global Inc. This software is an independent implementation, unrelated to the provider of EViews; "compatible" refers to identical functionality and computation results.
+- EViews is a trademark of IHS Global Inc. This software is an independent implementation, unrelated to the provider of EViews. "Compatible" means that, given the same input, it returns the same result within stated numerical tolerances (as defined in the verification report).
+
+## Verification
+
+- Verification was performed on version 0.1.0. Versions 0.2.0 and 0.3.0 changed no numerics, command grammar, or storage formats (as stated in each release's notes).
+- Verified scope: linear regression and diagnostic statistics; unit root and cointegration tests; instrumental variables and GMM; the ARCH family; discrete choice and GLM; panel estimation, panel unit root and cointegration; VAR and system estimation; state space models; and file formats (reading and writing .wf1, reading .edb), among others. The evidence is of four kinds: cell-by-cell collation against published tables and printed examples, independent recomputation from the formulas in the official documentation, the full test suite, and an independent black-box audit.
+- Limitations: areas without published reference values rest on independent recomputation, and collation against a real EViews installation is by spot checks. Random number sequences do not match EViews. The reference specification is centred on EViews 12. See the verification report for the full scope and limitations.
+
+## Development
+
+The author fixed the specifications in advance and made all design judgements and acceptance decisions; AI agents carried out the implementation and verification work. The expected values used in verification come from published tables and the formulas in the official documentation. Rulings on the six discrepancies found by the independent audit (their reproduction, correction, and re-verification) and on conflicts between reference materials were made by the author. The audit was performed as a black-box check, without access to the implementation code, by an AI that did not share context with the AI that carried out the implementation.
 
 ## Tables and sources
 
