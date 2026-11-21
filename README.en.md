@@ -45,7 +45,7 @@ Japanese:
 武末光尚 (2026)『MIvue 0.1.0 — EViews 互換計量経済エンジン』. https://github.com/mitunyansoncho/mivue-releases
 
 A verification report documenting the scope, methods, and results of the verification is also available.
-Takesue, M. (2026). MIvue Verification Report: Scope, Methods, and Results of Verifying an EViews-Compatible Econometric Engine. Zenodo. https://doi.org/10.5281/zenodo.24412625
+Takesue, M. (2026). MIvue Verification Report: Scope, Methods, and Results of Verifying an EViews-Compatible Econometric Engine. Zenodo. https://doi.org/10.5281/zenodo.24412624
 
 ## Update check
 

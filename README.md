@@ -45,7 +45,7 @@ English:
 Takesue, M. (2026). MIvue (Version 0.1.0) [Computer software]. https://github.com/mitunyansoncho/mivue-releases
 
 検証の範囲・方法・結果を記録した検証報告書も公開しています。
-武末光尚 (2026)『MIvue 検証報告書: EViews 互換計量経済エンジンの検証範囲・方法・結果』. Zenodo. https://doi.org/10.5281/zenodo.24412625
+武末光尚 (2026)『MIvue 検証報告書: EViews 互換計量経済エンジンの検証範囲・方法・結果』. Zenodo. https://doi.org/10.5281/zenodo.24412624
 
 ## 更新の確認
 
