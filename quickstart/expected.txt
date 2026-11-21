@@ -1,0 +1,21 @@
+date/year/quarter/month 列がないため、日付なし連番として読み込みました
+Dependent Variable: SALES
+Method: Least Squares
+Date: 01/01/00   Time: 00:00
+Sample: 1 12
+Included observations: 12
+Ordinary standard errors & covariance (d.f. adjusted)
+==============================================================================
+Variable               Coefficient    Std. Error   t-Statistic     Prob.
+==============================================================================
+C                         44.37931      9.632271      4.607357    0.0010
+AD                        7.892573      0.621114      12.70713    0.0000
+==============================================================================
+R-squared                 0.941681    Mean dependent var              164.0833
+Adjusted R-squared        0.935849    S.D. dependent var              27.49036
+S.E. of regression        6.962756    Akaike info criterion           6.870040
+Sum squared resid         484.7997    Schwarz criterion               6.950857
+Log likelihood           -39.22024    Hannan-Quinn criter.            6.840118
+F-statistic               161.4711    Durbin-Watson stat              2.191249
+Prob(F-statistic)         0.000000
+==============================================================================
