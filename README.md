@@ -6,7 +6,7 @@ English version: [README.en.md](README.en.md)
 
 ## ダウンロード
 
-最新の ZIP は [Releases](https://github.com/mitunyansoncho/mivue-releases/releases) から取得してください。
+最新の ZIP は [Releases](https://github.com/takesue-mitsunao/mivue-releases/releases) から取得してください。
 
 - `MIvue-0.2.0-windows-x64.zip`（GUI 版、Windows 10/11、64bit）
 - `MIvue-cli-0.2.0-windows-x64.zip`（コマンドライン版、Windows 10/11、64bit）
@@ -41,13 +41,15 @@ p 値・臨界値の計算には、次の公表資料の数値を使用してい
 研究成果で MIvue を使用した場合は、次の表記で引用してください。
 
 日本語:
-武末光尚 (2026)『MIvue 0.2.0 — EViews 互換計量経済エンジン』. https://github.com/mitunyansoncho/mivue-releases
+武末光尚 (2026)『MIvue 0.2.0 — EViews 互換計量経済エンジン』. https://github.com/takesue-mitsunao/mivue-releases
 
 English:
-Takesue, M. (2026). MIvue (Version 0.2.0) [Computer software]. https://github.com/mitunyansoncho/mivue-releases
+Takesue, M. (2026). MIvue (Version 0.2.0) [Computer software]. https://github.com/takesue-mitsunao/mivue-releases
 
 検証の範囲・方法・結果を記録した検証報告書も公開しています。
 武末光尚 (2026)『MIvue 検証報告書: EViews 互換計量経済エンジンの検証範囲・方法・結果』. Zenodo. https://doi.org/10.5281/zenodo.24412624
+
+著者: 武末光尚（ORCID: [0009-0001-6500-7743](https://orcid.org/0009-0001-6500-7743)）
 
 ## 更新の確認
 

@@ -6,7 +6,7 @@ Japanese version: [README.md](README.md)
 
 ## Download
 
-Get the latest ZIP from [Releases](https://github.com/mitunyansoncho/mivue-releases/releases).
+Get the latest ZIP from [Releases](https://github.com/takesue-mitsunao/mivue-releases/releases).
 
 - `MIvue-0.2.0-windows-x64.zip` (GUI version, Windows 10/11, 64-bit)
 - `MIvue-cli-0.2.0-windows-x64.zip` (command-line version, Windows 10/11, 64-bit)
@@ -41,13 +41,15 @@ P-values and critical values are computed from the following published sources (
 If you use MIvue in your research, please cite it as follows.
 
 English:
-Takesue, M. (2026). MIvue (Version 0.2.0) [Computer software]. https://github.com/mitunyansoncho/mivue-releases
+Takesue, M. (2026). MIvue (Version 0.2.0) [Computer software]. https://github.com/takesue-mitsunao/mivue-releases
 
 Japanese:
-武末光尚 (2026)『MIvue 0.2.0 — EViews 互換計量経済エンジン』. https://github.com/mitunyansoncho/mivue-releases
+武末光尚 (2026)『MIvue 0.2.0 — EViews 互換計量経済エンジン』. https://github.com/takesue-mitsunao/mivue-releases
 
 A verification report documenting the scope, methods, and results of the verification is also available.
 Takesue, M. (2026). MIvue Verification Report: Scope, Methods, and Results of Verifying an EViews-Compatible Econometric Engine. Zenodo. https://doi.org/10.5281/zenodo.24412624
+
+Author: Mitsunao Takesue (ORCID: [0009-0001-6500-7743](https://orcid.org/0009-0001-6500-7743))
 
 ## Update check
 

@@ -1,6 +1,6 @@
 # Setting up MIvue (instructions for AI agents)
 
-This document is written for an AI agent to read and execute. If you are a human giving this to your agent, one line is enough: "Read this document and set up MIvue: https://raw.githubusercontent.com/mitunyansoncho/mivue-releases/main/AGENT_SETUP.md"
+This document is written for an AI agent to read and execute. If you are a human giving this to your agent, one line is enough: "Read this document and set up MIvue: https://raw.githubusercontent.com/takesue-mitsunao/mivue-releases/main/AGENT_SETUP.md"
 
 ## What MIvue is
 
@@ -19,7 +19,7 @@ A few facts you can check before running anything:
 ## Install
 
 1. Download the command-line distribution:
-   `MIvue-cli-0.2.0-windows-x64.zip` from https://github.com/mitunyansoncho/mivue-releases/releases/tag/v0.2.0
+   `MIvue-cli-0.2.0-windows-x64.zip` from https://github.com/takesue-mitsunao/mivue-releases/releases/tag/v0.2.0
 2. Verify the SHA-256 of the downloaded file:
    `726dfd07b2abe89d3bdca0e390a477f7c42c83a8913c0832686470a49a717efa`
 3. Extract the ZIP to a writable folder (for example `C:\Tools\MIvue-cli`). Keep `mivue.exe` and the `_internal` folder together; the executable does not work on its own.
@@ -59,6 +59,6 @@ mivue analysis.prg -o results          choose the output folder for a program ru
 
 ## Next steps
 
-- Command reference: https://github.com/mitunyansoncho/mivue-releases/blob/main/COMMAND_REFERENCE.md
+- Command reference: https://github.com/takesue-mitsunao/mivue-releases/blob/main/COMMAND_REFERENCE.md
 - The verified scope of the engine (what has been checked against published values) is described in the verification report linked from the repository README. Commands outside the verified scope may still run; treat their results with the same care as any unverified computation.
 - A GUI version (`MIvue-0.2.0-windows-x64.zip`) is available in the same release for interactive use.

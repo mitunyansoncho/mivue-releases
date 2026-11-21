@@ -6,9 +6,10 @@ authors:
   - family-names: "Takesue"
     given-names: "Mitsunao"
     affiliation: "Nihon University, Faculty of Economics"
+    orcid: "https://orcid.org/0009-0001-6500-7743"
 version: "0.2.0"
 date-released: 2026-11-22
-url: "https://github.com/mitunyansoncho/mivue-releases"
+url: "https://github.com/takesue-mitsunao/mivue-releases"
 references:
   - type: report
     authors:
