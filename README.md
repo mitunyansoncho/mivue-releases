@@ -8,8 +8,8 @@ English version: [README.en.md](README.en.md)
 
 最新の ZIP は [Releases](https://github.com/takesue-mitsunao/mivue-releases/releases) から取得してください。
 
-- `MIvue-0.2.0-windows-x64.zip`（GUI 版、Windows 10/11、64bit）
-- `MIvue-cli-0.2.0-windows-x64.zip`（コマンドライン版、Windows 10/11、64bit）
+- `MIvue-0.3.0-windows-x64.zip`（GUI 版、Windows 10/11、64bit）
+- `MIvue-cli-0.3.0-windows-x64.zip`（コマンドライン版、Windows 10/11、64bit）
 
 GUI 版は ZIP を展開し、`MIvue\MIvue.exe` を起動します。インストールは不要です。
 コマンドライン版は、AI エージェントにセットアップさせることができます。手順は [AGENT_SETUP.md](AGENT_SETUP.md) をエージェントに読ませてください。コマンドの書式は [COMMAND_REFERENCE.md](COMMAND_REFERENCE.md) にまとめています。
@@ -22,6 +22,7 @@ GUI 版は ZIP を展開し、`MIvue\MIvue.exe` を起動します。インス�
 
 - ワークファイル（.evwf）の中に系列・方程式・グラフなどのオブジェクトを作成します。作業フォルダは、前回の場所が自動で復元されます。
 - EViews 風のコマンド（`wfcreate` / `series` / `equation ....ls` / `graph` / `wfsave` など）で操作でき、推定ダイアログからコマンドなしでも推定できます。
+- 0.3.0 から、GUI を開いているセッションへコマンドライン版（`mivue --live`）が接続できるようになりました。エージェントが開いているワークファイルへ直接コマンドを実行でき、変更は画面へ反映され、操作は記録に残って取り消せます。
 - はじめて使う方は [かんたんマニュアル](MANUAL.md) を参照してください。詳しい操作は、配布 ZIP 内の `README_DIST.md` にも記載があります。
 
 ## 利用について
@@ -41,10 +42,10 @@ p 値・臨界値の計算には、次の公表資料の数値を使用してい
 研究成果で MIvue を使用した場合は、次の表記で引用してください。
 
 日本語:
-武末光尚 (2026)『MIvue 0.2.0 — EViews 互換計量経済エンジン』. https://github.com/takesue-mitsunao/mivue-releases
+武末光尚 (2026)『MIvue 0.3.0 — EViews 互換計量経済エンジン』. https://github.com/takesue-mitsunao/mivue-releases
 
 English:
-Takesue, M. (2026). MIvue (Version 0.2.0) [Computer software]. https://github.com/takesue-mitsunao/mivue-releases
+Takesue, M. (2026). MIvue (Version 0.3.0) [Computer software]. https://github.com/takesue-mitsunao/mivue-releases
 
 検証の範囲・方法・結果を記録した検証報告書も公開しています。
 武末光尚 (2026)『MIvue 検証報告書: EViews 互換計量経済エンジンの検証範囲・方法・結果』. Zenodo. https://doi.org/10.5281/zenodo.24412624
