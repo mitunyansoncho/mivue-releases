@@ -8,7 +8,7 @@ Japanese version: [README.md](README.md)
 
 Get the latest ZIP from [Releases](https://github.com/mitunyansoncho/mivue-releases/releases).
 
-- `MIvue-0.1.0-windows-x64.zip` (Windows 10/11, 64-bit)
+- `MIvue-0.1.1-windows-x64.zip` (Windows 10/11, 64-bit)
 
 Extract the ZIP and run `MIvue\MIvue.exe`. No installation is required.
 
@@ -18,9 +18,9 @@ Because the executable is unsigned, Windows SmartScreen may show a warning on fi
 
 ## Usage essentials
 
-- On startup, choose a working folder. Objects such as series, equations, and graphs are created inside a workfile (.evwf).
+- Objects such as series, equations, and graphs are created inside a workfile (.evwf). The working folder from your previous session is restored automatically.
 - You can work with EViews-style commands (`wfcreate` / `series` / `equation ....ls` / `graph` / `wfsave`, etc.), and you can also estimate from the estimation dialogs without using commands.
-- For details, see `README_DIST.md` included in the distribution ZIP.
+- If you are new to MIvue, start with the [quick manual](MANUAL.md) (in Japanese). For details, see also `README_DIST.md` included in the distribution ZIP.
 
 ## Terms of use
 
@@ -39,10 +39,10 @@ P-values and critical values are computed from the following published sources (
 If you use MIvue in your research, please cite it as follows.
 
 English:
-Takesue, M. (2026). MIvue (Version 0.1.0) [Computer software]. https://github.com/mitunyansoncho/mivue-releases
+Takesue, M. (2026). MIvue (Version 0.1.1) [Computer software]. https://github.com/mitunyansoncho/mivue-releases
 
 Japanese:
-武末光尚 (2026)『MIvue 0.1.0 — EViews 互換計量経済エンジン』. https://github.com/mitunyansoncho/mivue-releases
+武末光尚 (2026)『MIvue 0.1.1 — EViews 互換計量経済エンジン』. https://github.com/mitunyansoncho/mivue-releases
 
 A verification report documenting the scope, methods, and results of the verification is also available.
 Takesue, M. (2026). MIvue Verification Report: Scope, Methods, and Results of Verifying an EViews-Compatible Econometric Engine. Zenodo. https://doi.org/10.5281/zenodo.24412624

@@ -6,8 +6,8 @@ authors:
   - family-names: "Takesue"
     given-names: "Mitsunao"
     affiliation: "Nihon University, Faculty of Economics"
-version: "0.1.0"
-date-released: 2026-11-21
+version: "0.1.1"
+date-released: 2026-11-22
 url: "https://github.com/mitunyansoncho/mivue-releases"
 references:
   - type: report
