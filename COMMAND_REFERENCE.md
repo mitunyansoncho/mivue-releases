@@ -1,16 +1,17 @@
 # MIvue コマンドリファレンス（検証済みの核）
 
-MIvue（ミービュー）0.3.1 のコマンドライン版で使うコマンドの要点です。ここに載せた書式は、実装で動作を確認したものです。エンジン全体の検証範囲（どの推定・検定が公表値と照合済みか）は検証報告書が正本で、この文書はその中から日常の分析で使う核を抜き出したものです。
+MIvue（ミービュー）1.0.0 のコマンドライン版で使うコマンドの要点です。ここに載せた書式は、実装で動作を確認したものです。エンジン全体の検証範囲（どの推定・検定が公表値と照合済みか）は検証報告書が正本で、この文書はその中から日常の分析で使う核を抜き出したものです。
 
-出力は EViews 本体の出力ではなく、互換エンジンによる再現値です。
+出力は EViews 本体・Stata 本体の出力ではなく、互換エンジンによる再現値です。
 
 ## CLI の使い方
 
 ```
-mivue --version                 版数を表示（例: MIvue 0.3.1）
+mivue --version                 版数を表示（例: MIvue 1.0.0）
 mivue --help                    使い方を表示
 mivue -c "コマンド"             コマンドを1つ実行
 mivue program.prg               .prg プログラムを実行
+mivue analysis.do               .do プログラムを Stata モードで実行
 mivue -c "コマンド" --json      結果を JSON で出力
 mivue program.prg -o out        .prg の書き出し先フォルダを指定
 ```
@@ -138,6 +139,27 @@ graph g2.scat ad sales
 ```
 
 グラフは7種（line、bar、area、spike、scat、xyline、xybar）です。コマンドライン版では、グラフは要約テキストとして表示されます。画像としての保存とコピーは GUI 版の機能です。
+
+## Stata モード
+
+`.do` ファイルを渡すと Stata モードで実行します。1つのプログラムの中では、EViews と Stata の文法は混在できません。数値は Stata 公式文書の印字例と照合しています。対応していないコマンド（graph、Mata、生存分析、ベイズなど）は明示エラーになります。
+
+```
+use data.dta                        データを開く（.dta の読み書きに対応）
+import delimited data.csv           CSV を取り込む
+generate lx = log(x)                変数の作成・置換（generate / replace）
+merge 1:1 id using other.dta        結合（append、reshape、collapse も対応）
+summarize                           記述統計（tabulate、correlate も対応）
+regress y x1 x2, vce(robust)        回帰（i. 因子変数、c.、# の交互作用、クラスタ標準誤差）
+logit y x1 x2                       離散選択（probit、logistic、margins, dydx() も対応）
+ivregress 2sls y x1 (x2 = z1 z2)    操作変数法（estat firststage も対応）
+xtset id year                       パネル宣言
+xtreg y x1 x2, fe                   パネル推定（re も対応）
+tsset year                          時系列宣言（L. などの時間演算子、arima の基礎形も対応）
+save out.dta                        保存（export delimited も対応）
+```
+
+GUI 版では、EViews モードと Stata モードをセッションの途中で切り替えられます。両側のデータとオブジェクトは保持され、直近の推定は切り替え先の文法で再推定されます。
 
 ## プログラム（.prg）
 

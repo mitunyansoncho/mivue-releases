@@ -8,8 +8,8 @@ Japanese version: [README.md](README.md)
 
 Get the latest ZIP from [Releases](https://github.com/takesue-mitsunao/mivue-releases/releases).
 
-- `MIvue-0.3.1-windows-x64.zip` (GUI version, Windows 10/11, 64-bit)
-- `MIvue-cli-0.3.1-windows-x64.zip` (command-line version, Windows 10/11, 64-bit)
+- `MIvue-1.0.0-windows-x64.zip` (GUI version, Windows 10/11, 64-bit)
+- `MIvue-cli-1.0.0-windows-x64.zip` (command-line version, Windows 10/11, 64-bit)
 
 For the GUI version, extract the ZIP and run `MIvue\MIvue.exe`. No installation is required.
 The command-line version can be set up by an AI agent: have your agent read [AGENT_SETUP.md](AGENT_SETUP.md). Command syntax is summarized in [COMMAND_REFERENCE.md](COMMAND_REFERENCE.md) (in Japanese).
@@ -24,16 +24,17 @@ Because the executable is unsigned, Windows SmartScreen may show a warning on fi
 - You can work with EViews-style commands (`wfcreate` / `series` / `equation ....ls` / `graph` / `wfsave`, etc.), and you can also estimate from the estimation dialogs without using commands.
 - New in 0.3.0: the command-line program can attach to an open GUI session (`mivue --live`). An agent can run commands directly in the workfile you have open; changes appear on screen, are recorded with their source, and can be undone.
 - New in 0.3.1: forecast standard errors and a forecast evaluation table. Standard errors are available for both static and dynamic forecasts as a series, and graphs can show a ±2 standard-error band. The evaluation table reports RMSE, MAE, MAPE, Theil's inequality coefficient and its decomposition (bias, variance, and covariance proportions). No existing computation results have changed.
+- New in 1.0.0: a Stata mode. It reads and writes `.do` and `.dta` files and covers the standard applied workflow in Stata's grammar: data import and reshaping, descriptive statistics, regression (factor variables, robust and cluster standard errors), `logit`/`probit`, instrumental variables, basic panel methods, and basic time series. In the GUI you can switch between EViews mode and Stata mode mid-session; both sides' data and objects are retained, and the most recent estimation is re-run on the other side.
 - If you are new to MIvue, start with the [quick manual](MANUAL.md) (in Japanese). For details, see also `README_DIST.md` included in the distribution ZIP.
 
 ## Terms of use
 
 - Distributed free of charge to students and researchers. The full terms are in the [Terms of Use (TERMS)](TERMS.md): free for educational and research purposes; commercial use requires prior permission; redistribution is not permitted.
-- EViews is a trademark of IHS Global Inc. This software is an independent implementation, unrelated to the provider of EViews. "Compatible" means that, given the same input, it returns the same result within stated numerical tolerances (as defined in the verification report).
+- EViews is a trademark of IHS Global Inc. Stata is a trademark of StataCorp LLC. This software is an independent implementation, unrelated to the providers of either product. "Compatible" means that, given the same input, it returns the same result within stated numerical tolerances (as defined in the verification report).
 
 ## Verification
 
-- Verification was performed on version 0.1.0. Versions 0.2.0 and 0.3.0 changed no numerics, command grammar, or storage formats (as stated in each release's notes). Version 0.3.1 likewise changes no existing numerics, command grammar, or storage formats; its added forecast standard errors and evaluation table were verified by independent recomputation from the formulas in the official documentation (User's Guide, Chapter 25).
+- Verification was performed on version 0.1.0. Versions 0.2.0 and 0.3.0 changed no numerics, command grammar, or storage formats (as stated in each release's notes). Version 0.3.1 likewise changes no existing numerics, command grammar, or storage formats; its added forecast standard errors and evaluation table were verified by independent recomputation from the formulas in the official documentation (User's Guide, Chapter 25). Version 1.0.0 also changes no existing EViews-side numerics, grammar, or storage formats; the numerics of the added Stata mode were verified against the printed examples in Stata's official documentation.
 - Verified scope: linear regression and diagnostic statistics; unit root and cointegration tests; instrumental variables and GMM; the ARCH family; discrete choice and GLM; panel estimation, panel unit root and cointegration; VAR and system estimation; state space models; and file formats (reading and writing .wf1, reading .edb), among others. The evidence is of four kinds: cell-by-cell collation against published tables and printed examples, independent recomputation from the formulas in the official documentation, the full test suite, and an independent black-box audit.
 - Limitations: areas without published reference values rest on independent recomputation, and collation against a real EViews installation is by spot checks. Random number sequences do not match EViews. The reference specification is centred on EViews 12. See the verification report for the full scope and limitations.
 
@@ -53,10 +54,10 @@ P-values and critical values are computed from the following published sources (
 If you use MIvue in your research, please cite it as follows.
 
 English:
-Takesue, M. (2026). MIvue (Version 0.3.1) [Computer software]. https://github.com/takesue-mitsunao/mivue-releases
+Takesue, M. (2026). MIvue (Version 1.0.0) [Computer software]. https://github.com/takesue-mitsunao/mivue-releases
 
 Japanese:
-武末光尚 (2026)『MIvue 0.3.1 — EViews 互換計量経済エンジン』. https://github.com/takesue-mitsunao/mivue-releases
+武末光尚 (2026)『MIvue 1.0.0 — EViews 互換計量経済エンジン』. https://github.com/takesue-mitsunao/mivue-releases
 
 A verification report documenting the scope, methods, and results of the verification is also available.
 Takesue, M. (2026). MIvue Verification Report: Scope, Methods, and Results of Verifying an EViews-Compatible Econometric Engine. Zenodo. https://doi.org/10.5281/zenodo.24412624

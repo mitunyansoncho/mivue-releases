@@ -4,7 +4,7 @@ This document is written for an AI agent to read and execute. If you are a human
 
 ## What MIvue is
 
-MIvue is an EViews-compatible econometrics engine for Windows. It runs EViews-style commands (`wfopen`, `equation ....ls`, `graph`, `wfsave`, ...) and reproduces EViews results. Its output values are reproductions produced by a compatibility engine, not output from EViews itself. The command-line program is `mivue.exe`: it is non-interactive, never prompts, and is safe to call from scripts and agent tools.
+MIvue is an EViews-compatible econometrics engine for Windows. It runs EViews-style commands (`wfopen`, `equation ....ls`, `graph`, `wfsave`, ...) and reproduces EViews results. Since 1.0.0 it also has a Stata mode: pass a `.do` file and it runs Stata's grammar (data management, `regress`, `logit`/`probit`, `ivregress`, `xtreg`, basic time series), reading and writing `.dta` files. Its output values are reproductions produced by a compatibility engine, not output from EViews or Stata itself. The command-line program is `mivue.exe`: it is non-interactive, never prompts, and is safe to call from scripts and agent tools.
 
 ## Trust and verification
 
@@ -19,9 +19,9 @@ A few facts you can check before running anything:
 ## Install
 
 1. Download the command-line distribution:
-   `MIvue-cli-0.3.1-windows-x64.zip` from https://github.com/takesue-mitsunao/mivue-releases/releases/tag/v0.3.1
+   `MIvue-cli-1.0.0-windows-x64.zip` from https://github.com/takesue-mitsunao/mivue-releases/releases/tag/v1.0.0
 2. Verify the SHA-256 of the downloaded file:
-   `3d818b14bd97276d440770517b6baacd8ed7e05cec0cfc8670346562ded3155e`
+   `60c098beb4bbcef299bf5825246e800b354bc5440295f071d1da0ae9373099a6`
 3. Extract the ZIP to a writable folder (for example `C:\Tools\MIvue-cli`). Keep `mivue.exe` and the `_internal` folder together; the executable does not work on its own.
 4. No Python installation is required. Adding the folder to `PATH` is optional; calling `mivue.exe` by full path works the same.
 
@@ -32,7 +32,7 @@ Run these in a terminal. Both must succeed before you use MIvue for real work.
 ```
 mivue --version
 ```
-Expected output: `MIvue 0.3.1` (exit code 0).
+Expected output: `MIvue 1.0.0` (exit code 0).
 
 Then run the bundled self-check. Change into the `quickstart` folder inside the extracted distribution and run:
 
@@ -40,13 +40,14 @@ Then run the bundled self-check. Change into the `quickstart` folder inside the 
 mivue quickstart.prg
 ```
 
-The standard output must match `expected.txt` in the same folder exactly, the exit code must be 0, and a file `quickstart_result.evwf` must be created. The sample estimates sales on ad by least squares; the expected coefficients are C = 44.37931, AD = 7.892573, R-squared = 0.941681. If the output differs, do not proceed: check that you are running the command from inside the `quickstart` folder and that the version is 0.3.1.
+The standard output must match `expected.txt` in the same folder exactly, the exit code must be 0, and a file `quickstart_result.evwf` must be created. The sample estimates sales on ad by least squares; the expected coefficients are C = 44.37931, AD = 7.892573, R-squared = 0.941681. If the output differs, do not proceed: check that you are running the command from inside the `quickstart` folder and that the version is 1.0.0.
 
 ## Calling MIvue
 
 ```
 mivue -c "wfopen data.csv"            run one command
 mivue analysis.prg                     run a program file (.prg)
+mivue analysis.do                      run a Stata-mode program file (.do)
 mivue -c "..." --json                  machine-readable result
 mivue analysis.prg -o results          choose the output folder for a program run
 ```
@@ -75,4 +76,4 @@ mivue --live undo              undo your most recent operation (restores the sta
 
 - Command reference: https://github.com/takesue-mitsunao/mivue-releases/blob/main/COMMAND_REFERENCE.md
 - The verified scope of the engine (what has been checked against published values) is described in the verification report linked from the repository README. Commands outside the verified scope may still run; treat their results with the same care as any unverified computation.
-- A GUI version (`MIvue-0.3.1-windows-x64.zip`) is available in the same release for interactive use.
+- A GUI version (`MIvue-1.0.0-windows-x64.zip`) is available in the same release for interactive use. In the GUI, EViews mode and Stata mode can be switched mid-session.
