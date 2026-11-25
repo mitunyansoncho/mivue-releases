@@ -19,9 +19,9 @@ A few facts you can check before running anything:
 ## Install
 
 1. Download the command-line distribution:
-   `MIvue-cli-1.0.0-windows-x64.zip` from https://github.com/takesue-mitsunao/mivue-releases/releases/tag/v1.0.0
+   `MIvue-cli-1.1.0-windows-x64.zip` from https://github.com/takesue-mitsunao/mivue-releases/releases/tag/v1.1.0
 2. Verify the SHA-256 of the downloaded file:
-   `60c098beb4bbcef299bf5825246e800b354bc5440295f071d1da0ae9373099a6`
+   `837b59276fbf2da6e8b6dd82154f123d2998a195fb8a286efe02b4b6872fca3f`
 3. Extract the ZIP to a writable folder (for example `C:\Tools\MIvue-cli`). Keep `mivue.exe` and the `_internal` folder together; the executable does not work on its own.
 4. No Python installation is required. Adding the folder to `PATH` is optional; calling `mivue.exe` by full path works the same.
 
@@ -32,7 +32,7 @@ Run these in a terminal. Both must succeed before you use MIvue for real work.
 ```
 mivue --version
 ```
-Expected output: `MIvue 1.0.0` (exit code 0).
+Expected output: `MIvue 1.1.0` (exit code 0).
 
 Then run the bundled self-check. Change into the `quickstart` folder inside the extracted distribution and run:
 
@@ -40,7 +40,7 @@ Then run the bundled self-check. Change into the `quickstart` folder inside the 
 mivue quickstart.prg
 ```
 
-The standard output must match `expected.txt` in the same folder exactly, the exit code must be 0, and a file `quickstart_result.evwf` must be created. The sample estimates sales on ad by least squares; the expected coefficients are C = 44.37931, AD = 7.892573, R-squared = 0.941681. If the output differs, do not proceed: check that you are running the command from inside the `quickstart` folder and that the version is 1.0.0.
+The standard output must match `expected.txt` in the same folder exactly, the exit code must be 0, and a file `quickstart_result.evwf` must be created. The sample estimates sales on ad by least squares; the expected coefficients are C = 44.37931, AD = 7.892573, R-squared = 0.941681. If the output differs, do not proceed: check that you are running the command from inside the `quickstart` folder and that the version is 1.1.0.
 
 ## Calling MIvue
 
@@ -76,4 +76,4 @@ mivue --live undo              undo your most recent operation (restores the sta
 
 - Command reference: https://github.com/takesue-mitsunao/mivue-releases/blob/main/COMMAND_REFERENCE.md
 - The verified scope of the engine (what has been checked against published values) is described in the verification report linked from the repository README. Commands outside the verified scope may still run; treat their results with the same care as any unverified computation.
-- A GUI version (`MIvue-1.0.0-windows-x64.zip`) is available in the same release for interactive use. In the GUI, EViews mode and Stata mode can be switched mid-session.
+- A GUI version (`MIvue-1.1.0-windows-x64.zip`) is available in the same release for interactive use. In the GUI, EViews mode and Stata mode can be switched mid-session.
